@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Plotva\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Plotva\\.nuget\\packages",
+      "D:\\vsDefault\\NuGetPackages"
+    ]
+  }
+}
