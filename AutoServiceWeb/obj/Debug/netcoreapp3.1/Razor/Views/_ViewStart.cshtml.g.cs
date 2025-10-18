@@ -18,10 +18,16 @@ using AutoServiceWeb
 
 #nullable disable
     ;
+#nullable restore
+#line 3 "D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Http
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"47e02b4da20d198892b7b1b00b12944068797c438ef2e82d20ff70b4d56bad39", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"e9d68ea4eeb6b180af30d7e5e42ec8ef93d592def38135226b08ec3a11631edc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d2348c85e1215eb1e8dcb532663db9f0fb899f982b2e32663804eeee125c9829", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     internal sealed class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -40,6 +46,25 @@ using AutoServiceWeb
 
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
+        public 
+#nullable restore
+#line 4 "D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\Views\_ViewImports.cshtml"
+IHttpContextAccessor
+
+#line default
+#line hidden
+#nullable disable
+         
+#nullable restore
+#line 4 "D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\Views\_ViewImports.cshtml"
+HttpContextAccessor
+
+#line default
+#line hidden
+#nullable disable
+         { get; private set; }
+         = default!;
         #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;

@@ -29,6 +29,7 @@ namespace AutoServiceWeb.Controllers
 
             user.Id = Guid.NewGuid().ToString();
             user.Password = passwordHasher.HashPassword(user, user.Password);
+            user.Role = "Client";
 
             await db.Users.AddAsync(user);
             await db.SaveChangesAsync();
@@ -52,8 +53,10 @@ namespace AutoServiceWeb.Controllers
                 return Unauthorized();
 
             HttpContext.Session.SetString("userId", user.Id);
+            HttpContext.Session.SetString("userRole", user.Role);
+            HttpContext.Session.SetString("userName", user.FullName);
 
-            return RedirectToAction("Profile");
+            return RedirectToAction("Profile", "Client", new { userId = user.Id });
         }
     }
 }

@@ -31,6 +31,7 @@ namespace AutoServiceWeb
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection));
 
             services.AddDistributedMemoryCache();
+            services.AddHttpContextAccessor();
             services.AddSession();
         }
 

@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "_AuthLayout";
+}
+
+
+<form method="post">
+    <h1>Регистрация</h1>
+    <div>
+        <label>Полное имя</label>
+        <input type="text" name="FullName" />
+    </div>
+    <div>
+        <label>Телефон</label>
+        <input type="number" name="Phone" />
+    </div>
+    <div>
+        <label>Почта</label>
+        <input type="email" name="Email" />
+    </div>
+    <div>
+        <label>Пароль</label>
+        <input type="password" name="Password" />
+    </div>
+    <button type="submit">Зарегистрироваться</button>
+    <a href="/Auth/Login"><button type="button">Уже есть аккаунт</button></a>
+</form>

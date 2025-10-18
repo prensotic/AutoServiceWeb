@@ -33,7 +33,7 @@ namespace AutoServiceWeb.Controllers
         [HttpGet]
         public async Task<IActionResult> Profile(string userId)
         {
-            var currentUserId = HttpContext.Session.GetString("user");
+            var currentUserId = HttpContext.Session.GetString("userId");
             if (currentUserId == null)
                 return Unauthorized();
 

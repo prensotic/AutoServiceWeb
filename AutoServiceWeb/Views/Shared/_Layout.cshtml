@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,7 +9,22 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    
+    @if (!string.IsNullOrEmpty(HttpContextAccessor.HttpContext.Session.GetString("userName")))
+    {
+        <header>
+            <h3>AUTO SERVICE</h3>
+            <nav>
+                <span>Привет, @HttpContextAccessor.HttpContext.Session.GetString("userName")</span>
+                <a href="/Account/Logout">Выйти</a>
+            </nav>
+        </header>
+    }
+    else
+    {
+        <div>
+            <button><a href="/Auth/Login">Войти</a></button>
+        </div>   
+    }
     <div>
         @RenderBody()
     </div>

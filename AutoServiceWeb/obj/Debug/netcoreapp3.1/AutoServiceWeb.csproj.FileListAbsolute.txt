@@ -111,3 +111,8 @@ D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServi
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Dashboard.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Services.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Service.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServiceWeb.sourcelink.json
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Login.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Register.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AuthLayout.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Client\Profile.cshtml.g.cs
