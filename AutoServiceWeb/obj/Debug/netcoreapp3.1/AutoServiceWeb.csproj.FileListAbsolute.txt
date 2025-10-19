@@ -120,3 +120,5 @@ D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Vie
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\CreateService.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Clients.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\GetClientById.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\CreateOrder.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Orders.cshtml.g.cs

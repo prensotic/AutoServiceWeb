@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using AutoServiceWeb.Models;
 using Microsoft.EntityFrameworkCore;
 using AutoServiceWeb.Data;
+using System;
 
 namespace AutoServiceWeb.Controllers
 {
@@ -95,7 +96,7 @@ namespace AutoServiceWeb.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteUser(string id)
+        public async Task<IActionResult> DeleteClient(string id)
         {
             if (string.IsNullOrEmpty(id)) return NotFound();
 
@@ -108,5 +109,23 @@ namespace AutoServiceWeb.Controllers
 
             return RedirectToAction("Clients");
         }
-    }   
+
+        [HttpGet]
+        public async Task<IActionResult> CreateOrder() => View((await db.Users.ToListAsync(), await db.Services.ToListAsync()));
+
+        [HttpPost]
+        public async Task<IActionResult> CreateOrder(Order order) 
+        { 
+            if (order == null) return NotFound();
+            
+            order.Id = Guid.NewGuid().ToString();   
+
+            await db.Orders.AddAsync(order);    
+            await db.SaveChangesAsync();
+            return RedirectToAction("Orders");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Orders() => View(await db.Orders.ToListAsync());
+    }
 }

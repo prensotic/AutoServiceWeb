@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "_DashboardLayout";
+}
+
+<div class="orders_list">
+    @foreach(var order in Model){
+        <div class="order_item">
+            <h1>Заказ №@order.Id</h1>   
+        </div>
+    }
+</div>

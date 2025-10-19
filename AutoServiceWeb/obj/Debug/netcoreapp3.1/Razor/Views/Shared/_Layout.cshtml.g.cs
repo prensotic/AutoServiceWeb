@@ -24,10 +24,16 @@ using Microsoft.AspNetCore.Http
 
 #nullable disable
     ;
+#nullable restore
+#line 5 "D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\Views\_ViewImports.cshtml"
+using AutoServiceWeb.Models
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed70", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d2348c85e1215eb1e8dcb532663db9f0fb899f982b2e32663804eeee125c9829", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"84ce03240a28cc963cff1dc4f94593c8e2c8153a6d818476cbddd1b3ead1dd6b", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -61,7 +67,7 @@ using Microsoft.AspNetCore.Http
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed704302", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed704458", async() => {
                 WriteLiteral("\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>");
                 Write(
 #nullable restore
@@ -73,7 +79,7 @@ using Microsoft.AspNetCore.Http
 #nullable disable
                 );
                 WriteLiteral(" - AutoServiceWeb</title>\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed705007", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed705163", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -100,7 +106,7 @@ using Microsoft.AspNetCore.Http
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed707032", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed707188", async() => {
                 WriteLiteral(@"
 
     <header>

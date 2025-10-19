@@ -6,7 +6,10 @@
     @foreach(var client in Model){
         <div class="client_item">
             <h1>@client.FullName</h1>
-            <a href="/Admin/GetClientById/@client.Id">Подробнее</a>
+            <a href="/Admin/GetClientById/@client.Id"><button>Подробнее</button></a>
+            <form method="post" action="/Admin/DeleteClient/@client.Id" style="display: inline;">
+                <button type="submit" onclick="return confirm('Вы уверены, что хотите удалить этого клиента?')">Удалить</button>
+            </form>
         </div>
     }
 </div>

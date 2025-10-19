@@ -24,10 +24,16 @@ using Microsoft.AspNetCore.Http
 
 #nullable disable
     ;
+#nullable restore
+#line 5 "D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\Views\_ViewImports.cshtml"
+using AutoServiceWeb.Models
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"cc3e3018f6a1fb02f394420c3dc835852507126584973b37783cc6a2b4a4615a", @"/Views/Shared/_AuthLayout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d2348c85e1215eb1e8dcb532663db9f0fb899f982b2e32663804eeee125c9829", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"84ce03240a28cc963cff1dc4f94593c8e2c8153a6d818476cbddd1b3ead1dd6b", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__AuthLayout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -58,7 +64,7 @@ using Microsoft.AspNetCore.Http
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc3e3018f6a1fb02f394420c3dc835852507126584973b37783cc6a2b4a4615a3427", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc3e3018f6a1fb02f394420c3dc835852507126584973b37783cc6a2b4a4615a3583", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <link rel=\"stylesheet\" href=\"/css/Auth.css\" />\r\n    <link rel=\"stylesheet\" href=\"/css/site.css\" />\r\n    <title>");
                 Write(
 #nullable restore
@@ -82,7 +88,7 @@ using Microsoft.AspNetCore.Http
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc3e3018f6a1fb02f394420c3dc835852507126584973b37783cc6a2b4a4615a4882", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc3e3018f6a1fb02f394420c3dc835852507126584973b37783cc6a2b4a4615a5038", async() => {
                 WriteLiteral("\r\n    <section>\r\n        ");
                 Write(
 #nullable restore

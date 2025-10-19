@@ -24,10 +24,16 @@ using Microsoft.AspNetCore.Http
 
 #nullable disable
     ;
+#nullable restore
+#line 5 "D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\Views\_ViewImports.cshtml"
+using AutoServiceWeb.Models
+
+#nullable disable
+    ;
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"9df948e79f199973366a6a39e79cc2f80d7fd58d85517ae66c47c48e2d635289", @"/Views/Admin/UpdateService.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"d2348c85e1215eb1e8dcb532663db9f0fb899f982b2e32663804eeee125c9829", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"84ce03240a28cc963cff1dc4f94593c8e2c8153a6d818476cbddd1b3ead1dd6b", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Admin_UpdateService : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -68,7 +74,7 @@ using Microsoft.AspNetCore.Http
 #nullable disable
 
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9df948e79f199973366a6a39e79cc2f80d7fd58d85517ae66c47c48e2d6352893896", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9df948e79f199973366a6a39e79cc2f80d7fd58d85517ae66c47c48e2d6352894052", async() => {
                 WriteLiteral("\r\n    <div>\r\n        <h1>Редактирование услуги</h1>\r\n        <div>\r\n            <input name=\"Title\"");
                 BeginWriteAttribute("value", " value=\"", 162, "\"", 182, 1);
                 WriteAttributeValue("", 170, 
