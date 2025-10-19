@@ -3,16 +3,17 @@
 }
 
 
-<form method="post">
+<form method="post" class="auth_form">
     <h1>Логин</h1>
     <div>
-        <label>Почта</label>
-        <input type="text" name="Email"/>
+        <input placeholder="Введите Почту" type="email" name="Email" />
     </div>
     <div>
-        <label>Пароль</label>
-        <input type="password" name="Password" />
+        <input placeholder="Введите Пароль" type="password" name="Password" />
     </div>
-    <button type="submit">Войти</button>
-    <a href="/Auth/Register"><button type="button">Создать аккаунт</button></a>
+    <div class="auth_buttons">
+        <button type="submit">Войти</button>
+        <p>Или</p>
+        <button type="button"><a href="/Auth/Register">Создать аккаунт </a></button>
+    </div>
 </form>

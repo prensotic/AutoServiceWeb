@@ -56,7 +56,28 @@ namespace AutoServiceWeb.Controllers
             HttpContext.Session.SetString("userRole", user.Role);
             HttpContext.Session.SetString("userName", user.FullName);
 
-            return RedirectToAction("Profile", "Client", new { userId = user.Id });
+            if (user.Role == "Client")
+            {
+                return RedirectToAction("Profile", "Client", new { userId = user.Id });
+            }
+            else
+            {
+                return RedirectToAction("Services", "Admin");
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            var currentUserId = HttpContext.Session.GetString("userId");
+            if (currentUserId == null)
+                return Unauthorized();
+
+            HttpContext.Session.Remove("userId");
+            HttpContext.Session.Remove("userName");
+            HttpContext.Session.Remove("userRole");
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

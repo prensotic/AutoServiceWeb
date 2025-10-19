@@ -108,7 +108,6 @@ D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServ.
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServiceWeb.dll
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServiceWeb.pdb
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServiceWeb.genruntimeconfig.cache
-D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Dashboard.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Services.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Service.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\AutoServiceWeb.sourcelink.json
@@ -116,3 +115,4 @@ D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Vie
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Auth\Register.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AuthLayout.cshtml.g.cs
 D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Client\Profile.cshtml.g.cs
+D:\4курс\WEB\AutoServiceWeb\AutoServiceWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_DashboardLayout.cshtml.g.cs

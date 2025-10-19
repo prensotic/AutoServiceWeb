@@ -1,32 +1,51 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AutoServiceWeb</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/Profile.css" />
 </head>
 <body>
-    @if (!string.IsNullOrEmpty(HttpContextAccessor.HttpContext.Session.GetString("userName")))
-    {
-        <header>
+
+    <header>
+        <div class="header_content">
             <h3>AUTO SERVICE</h3>
             <nav>
-                <span>Привет, @HttpContextAccessor.HttpContext.Session.GetString("userName")</span>
-                <a href="/Account/Logout">Выйти</a>
+                <a>
+                    Главная
+                </a>
+                <a>
+                    Услуги
+                </a>
+                <a>
+                    Контакты
+                </a>
             </nav>
-        </header>
-    }
-    else
-    {
-        <div>
-            <button><a href="/Auth/Login">Войти</a></button>
-        </div>   
-    }
-    <div>
+            @if (!string.IsNullOrEmpty(HttpContextAccessor.HttpContext.Session.GetString("userName")))
+            {
+                <span>Привет, @HttpContextAccessor.HttpContext.Session.GetString("userName")</span>
+            }
+            else
+            {
+                <div>
+                    <a href="/Auth/Login"><button>Войти</button></a>
+                </div>
+            }
+        </div>
+    </header>
+    <section>
         @RenderBody()
-    </div>
+    </section>
 </body>
 </html>
+
+
+<!--
+    #102134
+    #1a239f
+    #404751
+    #896f3d
+-->

@@ -1,3 +1,17 @@
-﻿<div>
+﻿<div class="profile_content">
+    <img src="/assets/images/user_icon.png"/>
     <h1>@Model.FullName</h1>
+    <div class="user_info">
+        <div class="user_info_contact">
+            <label>Номер телефона:</label>
+            <p>@Model.Phone</p>
+        </div>
+        <div class="user_info_contact">
+            <label>Почта:</label>
+            <p>@Model.Email</p>
+        </div>
+    </div>
+    <a href="/Auth/Logout">
+        <button>Выйти</button>
+    </a>
 </div>
