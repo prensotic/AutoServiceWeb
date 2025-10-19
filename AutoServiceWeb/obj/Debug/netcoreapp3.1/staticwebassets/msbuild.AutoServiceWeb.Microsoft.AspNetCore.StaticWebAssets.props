@@ -1,10 +1,58 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\diz.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\diz.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\diz.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\rulevoe-upravlenie-avtomobilya.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\rulevoe-upravlenie-avtomobilya.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\rulevoe-upravlenie-avtomobilya.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\transmission.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\transmission.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\transmission.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\user_icon.png))">
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>assets\images\user_icon.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -16,11 +64,235 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\user_icon.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\АКПП.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\АКПП.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\АКПП.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Вариатор.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Вариатор.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Вариатор.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Выхлопная система.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Выхлопная система.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Выхлопная система.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\ГУР.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\ГУР.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\ГУР.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Двигатель.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Двигатель.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Двигатель.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Дополнительные услуги.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Дополнительные услуги.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Дополнительные услуги.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Кондиционер.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Кондиционер.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Кондиционер.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\КПП.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\КПП.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\КПП.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Подвеска.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Подвеска.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Подвеска.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Сцепление.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Сцепление.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Сцепление.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Техническое обслуживание.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Техническое обслуживание.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Техническое обслуживание.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Топливная система.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Топливная система.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Топливная система.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Шиномонтаж.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Шиномонтаж.jpg</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Шиномонтаж.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Электрика.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>assets\images\Электрика.png</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\Электрика.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\Auth.css))">
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>css\Auth.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -32,11 +304,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\Auth.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\Dashboard.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>AutoServiceWeb</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>css\Dashboard.css</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\Dashboard.css))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\Profile.css))">
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>css\Profile.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -52,7 +340,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>css\site.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -68,7 +356,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>favicon.ico</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -84,7 +372,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\site.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -100,7 +388,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-grid.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -116,7 +404,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-grid.css.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -132,7 +420,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-grid.min.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -148,7 +436,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-grid.min.css.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -164,7 +452,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-reboot.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -180,7 +468,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-reboot.css.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -196,7 +484,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-reboot.min.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -212,7 +500,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap-reboot.min.css.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -228,7 +516,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -244,7 +532,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap.css.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -260,7 +548,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap.min.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -276,7 +564,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\css\bootstrap.min.css.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -292,7 +580,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.bundle.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -308,7 +596,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.bundle.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -324,7 +612,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.bundle.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -340,7 +628,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.bundle.min.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -356,7 +644,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -372,7 +660,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -388,7 +676,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -404,7 +692,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\dist\js\bootstrap.min.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -420,7 +708,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\bootstrap\LICENSE</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -436,7 +724,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -452,7 +740,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -468,7 +756,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation-unobtrusive\LICENSE.txt</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -484,7 +772,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation\dist\additional-methods.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -500,7 +788,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation\dist\additional-methods.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -516,7 +804,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation\dist\jquery.validate.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -532,7 +820,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation\dist\jquery.validate.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -548,7 +836,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery-validation\LICENSE.md</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -564,7 +852,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery\dist\jquery.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -580,7 +868,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery\dist\jquery.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -596,7 +884,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery\dist\jquery.min.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -612,7 +900,7 @@
       <SourceType>Package</SourceType>
       <SourceId>AutoServiceWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/AutoServiceWeb</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\jquery\LICENSE.txt</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>

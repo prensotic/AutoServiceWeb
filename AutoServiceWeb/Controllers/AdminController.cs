@@ -15,8 +15,6 @@ namespace AutoServiceWeb.Controllers
         {
             db = context;
         }
-        [HttpGet]
-        public IActionResult Dashboard() => View();
 
         [HttpGet]
         public async Task<IActionResult> Services() => View(await db.Services.ToListAsync());
@@ -50,17 +48,17 @@ namespace AutoServiceWeb.Controllers
         {
             if (string.IsNullOrEmpty(id)) return NotFound();
 
-            User user = await db.Users.FirstOrDefaultAsync(u => u.Id == id);
+            Service service = await db.Services.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (user == null) return NotFound();
+            if (service == null) return NotFound();
 
-            return View(user);
+            return View(service);
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateService(User user)
+        public async Task<IActionResult> UpdateService(Service service)
         {
-            db.Users.Update(user);
+            db.Services.Update(service);
             await db.SaveChangesAsync();
 
             return RedirectToAction("Services");
@@ -71,17 +69,18 @@ namespace AutoServiceWeb.Controllers
         {
             if (string.IsNullOrEmpty(id)) return NotFound();
 
-            User user = await db.Users.FirstOrDefaultAsync(u => u.Id == id);
-            if (user == null) return NotFound();
+            Service service = await db.Services.FirstOrDefaultAsync(s => s.Id == id);
+            if (service == null) return NotFound();
 
-            db.Users.Remove(user);
+            db.Services.Remove(service);
             await db.SaveChangesAsync();
 
-            return View(user);
+            return RedirectToAction("Services");
         }
 
         [HttpGet]
         public async Task<IActionResult> Clients() => View(await db.Users.Where(u => u.Role == "Client").ToListAsync());
+
 
         [HttpGet]
         public async Task<IActionResult> GetClientById(string id)

@@ -2,15 +2,32 @@
     Layout = "_DashboardLayout";
 }
 
-
-<div>
+<div class="services_list">
     @foreach(var service in Model)
     {
-        <div>
+        var finalPrice = service.Price - (service.Price * (service.Discount / 100m));
+        <div class="service_item">
+            <img src="@service.MainImage"/>
+            
             <h3>@service.Title</h3>
-            <p>@service.Description</p>
+            <div class="service_item_info">
+                <span class="price">@service.Price.ToString("N0") руб.</span><br/>
+                <span>@finalPrice.ToString("N0") руб. -@service.Discount%</span><br/>
+                <span>Время выполнения: @service.Time</span>
+            </div>
+            <div class="service_buttons">
+                <a href="/Admin/UpdateService/@service.Id">
+                    <button type="button">Редактировать</button>
+                </a>
+                <form method="post" action="/Admin/DeleteService/@service.Id" style="display: inline;">
+                    <button type="submit" onclick="return confirm('Вы уверены, что хотите удалить эту услугу?')">Удалить</button>
+                </form>
+            </div>
         </div>
     }
+    <a href="/Admin/CreateService">
+        <button class="create_service_button">
+            Добавить услугу
+        </button>
+    </a>
 </div>
-
-

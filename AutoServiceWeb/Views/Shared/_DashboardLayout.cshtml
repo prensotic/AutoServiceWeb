@@ -1,16 +1,28 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="/css/Dashboard.css" />    
+    <link rel="stylesheet" href="/css/site.css" />    
 </head>
 <body>
     <aside class="side_bar">
+        <h1>AUTO SERVICE</h1>
 
+        <span>Админ: @HttpContextAccessor.HttpContext.Session.GetString("userName")</span>
+
+        <div class="side_bar_nav">
+            <a href="/Admin/Services">Услуги</a>
+            <a href="/Admin/Clients">Клиенты</a>
+            <a>Создать запись</a>
+            <a>История продаж</a>
+        </div>
+        <a href="/Auth/Logout">
+            <button>Выйти</button>
+        </a>
     </aside>
     <div>
         @RenderBody()
-    </div>
 </body>
 </html>

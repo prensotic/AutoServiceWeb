@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "_DashboardLayout";
+}
+
+<div class="clients_list">
+    @foreach(var client in Model){
+        <div class="client_item">
+            <h1>@client.FullName</h1>
+            <a href="/Admin/GetClientById/@client.Id">Подробнее</a>
+        </div>
+    }
+</div>

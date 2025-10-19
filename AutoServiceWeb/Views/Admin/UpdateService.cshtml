@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_DashboardLayout";
+}
+
+<form method="post">
+    <div>
+        <h1>Редактирование услуги</h1>
+        <div>
+            <input name="Title" value="@Model.Title"/>
+        </div>
+        <div>
+            <input name="Price" type="number" value="@Model.Price"/>
+        </div>
+        <div>
+            <input name="Discount" type="number" max="100" min="0" value="@Model.Discount"/>
+        </div>
+        <div>
+            <input name="Time" value="@Model.Time"/>
+        </div>
+        <div>
+            <input name="MainImage" value="@Model.MainImage"/>
+        </div>
+        <div class="service_buttons">
+            <button type="submit">Изменить</button>
+            <a href="/Admin/Services"><button type="button">Отмена</button></a>
+        </div>
+    </div>
+</form>

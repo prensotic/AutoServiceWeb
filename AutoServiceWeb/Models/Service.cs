@@ -9,7 +9,7 @@ namespace AutoServiceWeb.Models
     {
         public string Id { get; set; } = string.Empty;
         public string Title { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
+        public string MainImage { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public int Discount { get; set; }
         public string Time { get; set; } = string.Empty;
