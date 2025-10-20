@@ -33,7 +33,7 @@ using AutoServiceWeb.Models
     #line default
     #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"bb7411f44eaf19a0e1ffa2be12d4be7ca28247ebbb6dddbbc16a8b9b71aaed70", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"84ce03240a28cc963cff1dc4f94593c8e2c8153a6d818476cbddd1b3ead1dd6b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"7431906f1e80bb9dd23b34b483be6af5cd3751bf46fab958484b305ac6a18d11", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable

@@ -4,22 +4,28 @@
 
 @model (List<User> Clients, List<Service> Services)
 
-<form method="post">
+<form class="service_form" method="post">
     <h1>Создать заказ</h1>
+
     <h3>Выберете клиента:</h3>
-    <select name="ClientId">
+    <select name="ClientId" required>
         @foreach(var client in Model.Clients)
         {
             <option value="@client.Id">@client.FullName</option>
         }
     </select>
+
     <h3>Выберете услугу:</h3>
-    <select name="ServiceId">
+    <select name="ServiceId" required>
         @foreach(var service in Model.Services)
         {
             <option value="@service.Id">@service.Title</option>
         }
     </select>
+
+    <h3>Выберете дату и время:</h3>
+    <input type="datetime-local" name="ServiceDateTime" required />
+
     <div class="order_buttons">
         <button type="submit">Создать</button>
         <a href="/Admin/Orders"><button type="button">Отмена</button></a>

@@ -2,14 +2,40 @@
     Layout = "_DashboardLayout";
 }
 
-<div class="clients_list">
-    @foreach(var client in Model){
+<h2 style="margin: 20px; color: #ffc936; font-size: 24px;">Список клиентов</h2>
+
+<input type="text" id="clientSearch" placeholder="Поиск клиента..." style="margin-bottom:15px; margin-left: 20px; width:300px; padding:5px;" />
+
+<div class="clients_list" id="clientsList">
+    @foreach(var client in Model)
+    {
         <div class="client_item">
             <h1>@client.FullName</h1>
-            <a href="/Admin/GetClientById/@client.Id"><button>Подробнее</button></a>
-            <form method="post" action="/Admin/DeleteClient/@client.Id" style="display: inline;">
-                <button type="submit" onclick="return confirm('Вы уверены, что хотите удалить этого клиента?')">Удалить</button>
-            </form>
+            <span>Почта: @client.Email</span><br/>  
+            <div class="client_buttons">
+                <a href="/Admin/GetClientById/@client.Id"><button>Подробнее</button></a>
+                <form method="post" action="/Admin/DeleteClient/@client.Id" style="display: inline;">
+                    <button type="submit" onclick="return confirm('Вы уверены, что хотите удалить этого клиента?')">Удалить</button>
+                </form>
+            </div>
         </div>
     }
 </div>
+
+<script>
+const searchInput = document.getElementById('clientSearch');
+const clientsList = document.getElementById('clientsList');
+
+searchInput.addEventListener('input', async () => {
+    const query = searchInput.value;
+
+    const response = await fetch(`/Admin/Clients?search=${encodeURIComponent(query)}`);
+    const html = await response.text();
+
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+
+    const newList = tempDiv.querySelector('#clientsList');
+    clientsList.innerHTML = newList.innerHTML;
+});
+</script>

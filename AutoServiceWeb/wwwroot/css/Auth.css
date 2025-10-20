@@ -45,3 +45,8 @@ p{
 a{
     width: 300px;  
 }
+
+.additional_image{
+    padding: 10px;
+    background: #1d1d1d;
+}

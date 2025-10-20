@@ -28,6 +28,8 @@ aside{
 
 .side_bar_nav a {
     cursor: pointer;
+    text-decoration: none;
+    color: #ffc936;
 }
 
 button{
@@ -44,7 +46,7 @@ span{
 }
 
 .services_list {
-    min-height: 100vh;
+    height: 80vh;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
@@ -52,25 +54,30 @@ span{
     align-items: start;
     justify-items: center;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .service_item {
     background: #0a1624;
-    height: 500px;
-    width: 300px;
+    height: 520px;
+    width: 320px;
     border-radius: 10px;
     gap: 10px;
     display: grid;
-    grid-template-rows: 50% 5% 20% 25%;
+    grid-template-rows: 40% 15% 20% 25%;
     justify-content: space-around;
     padding:20px;
     border: 1px solid #ffc936;
     transition: 0.5s ease-in-out;
 }
 
+.service_item span{
+    font-size: 16px;
+}
+
 .create_service_button {
-    height: 540px;
-    width: 340px;
+    height: 520px;
+    width: 320px;
     background: #0a1624;
     color: #ffc936;
     border-radius: 10px;
@@ -105,5 +112,117 @@ span{
 .service_buttons{
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
+}
+
+.orders_list{
+    color: #fff;
+}
+
+.service_form {
+    position: relative;
+    width: 500px;
+    max-height: 800px;
+    margin: 0 auto;
+    top: 100px;
+    padding: 40px;
+    background: #0a1624;
+    border: 1px solid #ffc936;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.service_form h1{
+    text-align: center;
+}
+
+.service_form img {
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: transparent;
+    height: 40px;
+    border-bottom: 1px solid #ffc936;
+    margin: 10px 0px;
+}
+
+label, h3 {
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.clients_list{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.client_item {
+    display: flex;
+    justify-content: space-between;
+    background: #0a1624;
+    align-items:center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.client_buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.profile_content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 20px;
+    color: #fff;
+}
+
+.profile_content img {
+    width: 200px;
+    height: 200px;
+}
+
+.user_info {
+    display: flex;
+    gap: 20px;
+}
+
+.order_buttons {
+    display: flex;
+    gap: 20px;  
+}
+
+.orders_list{
+    height: 85vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.order_item {
+    display: flex;
+    flex-direction: column;
+    background: #0a1624;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+strong {
+    color: #ffc936;
 }

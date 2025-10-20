@@ -1,11 +1,54 @@
-﻿@{
+﻿@using System
+@using System.Linq
+@model List<AutoServiceWeb.Models.Order>
+
+@{
     Layout = "_DashboardLayout";
+    var currentFilter = ViewBag.Filter as string ?? "nearest";
 }
 
+<h2 style="margin: 20px; color: #ffc936; font-size: 24px;">Ближайшие записи</h2>
+
+<form style="margin: 20px;" method="get" asp-action="Orders" style="margin-bottom:15px;">
+    <label>Показать: </label>
+    <select name="filter" onchange="this.form.submit()">
+        <option value="nearest" selected="@(currentFilter == "nearest")">Ближайшие (сегодня и завтра)</option>
+        <option value="all" selected="@(currentFilter == "all")">Все заказы</option>
+    </select>
+</form>
+
 <div class="orders_list">
-    @foreach(var order in Model){
-        <div class="order_item">
-            <h1>Заказ №@order.Id</h1>   
+    @foreach (var order in Model)
+    {
+        var timeLeft = order.ServiceDateTime - DateTime.Now;
+        var hours = (int)timeLeft.TotalHours;
+        var minutes = timeLeft.Minutes;
+        var isUrgent = timeLeft.TotalMinutes < 60;
+
+        <div class="order_item" style="border:1px solid #ccc; margin-bottom:10px;">
+            <h3>Заказ №@order.Id</h3>
+            <p><strong>Услуга:</strong> @order.Service?.Title</p>
+            <p><strong>Клиент:</strong> @order.Client?.FullName</p>
+            <p><strong>Email:</strong> @order.Client?.Email</p>
+            <p><strong>Телефон:</strong> @order.Client?.Phone</p>
+            <p><strong>Дата и время:</strong> @order.ServiceDateTime.ToString("dd.MM.yyyy HH:mm")</p>
+            <p>
+                <strong>До начала:</strong> 
+                <span style="color:@(isUrgent ? "red" : "white")">
+                    @(hours) ч. @(minutes) мин.
+                </span>
+            </p>
+            <p><strong>Статус: @(order.isActive == true ? "Активен" : "Завершен")</strong></p>
+            @if(order.isActive == true){
+                <form method="post" action="/Admin/CompleteOrder/@order.Id">
+                    <button type="submit">Завершить заказ</button>  
+                </form>
+            }
+            <form method="post" action="/Admin/DeleteOrder/@order.Id">
+                <button type="submit" onclick="return confirm('Вы уверены, что хотите удалить эту запись?')">Удалить запись</button>
+            </form>
         </div>
     }
 </div>
+
+

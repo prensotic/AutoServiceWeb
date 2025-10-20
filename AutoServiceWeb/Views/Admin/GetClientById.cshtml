@@ -2,8 +2,20 @@
     Layout = "_DashboardLayout";
 }
 
-<div>
+<div class="profile_content">
+    <img src="/assets/images/user_icon.png"/>
     <h1>@Model.FullName</h1>
-    <span>@Model.Phone</span>
-    <span>@Model.Email</span>
+    <div class="user_info">
+        <div class="user_info_contact">
+            <label>Номер телефона:</label>
+            <p>@Model.Phone</p>
+        </div>
+        <div class="user_info_contact">
+            <label>Почта:</label>
+            <p>@Model.Email</p>
+        </div>
+    </div>
+    <a href="/Admin/Clients">
+        <button>Назад к списку клиентов</button>
+    </a>
 </div>

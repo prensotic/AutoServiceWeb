@@ -9,5 +9,11 @@ namespace AutoServiceWeb.Models
         public string ClientId { get; set; } = string.Empty;
         public string ServiceId { get; set; } = string.Empty;
         public DateTime CreationDateAndTime { get; set; }
+        public DateTime ServiceDateTime { get; set; } 
+        public bool isActive { get; set; }
+
+        public User Client { get; set; } 
+        public Service Service { get; set; }
     }
+
 }

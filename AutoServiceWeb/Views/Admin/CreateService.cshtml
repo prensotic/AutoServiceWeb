@@ -2,27 +2,26 @@
     Layout = "_DashboardLayout";
 }
 
-<form method="post">
-    <div>
-        <h1>Создание услуги</h1>
+<form class="service_form" method="post" enctype="multipart/form-data">
+    <h1>Создание услуги</h1>
         <div>
-            <input name="Title" />
+            <input placeholder="Название услуги..." name="Title" />
         </div>
         <div>
-            <input name="Price" type="number" />
+            <input placeholder="Цена..." name="Price" type="number" />
         </div>
         <div>
-            <input name="Discount" type="number" max="100" min="0" />
+            <input placeholder="Скидка..." name="Discount" type="number" max="100" min="0" />
         </div>
         <div>
-            <input name="Time" />
+            <input placeholder="Время выполнения (например 3 часа)..." name="Time" />
         </div>
         <div>
-            <input name="MainImage" />
-        </div>
+    <label>Главное изображение:</label>
+        <input type="file" name="MainImage" accept="image/*" />
+    </div>
         <div class="service_buttons">
             <button type="submit">Создать</button>
             <a href="/Admin/Services"><button type="button">Отмена</button></a>
         </div>
-    </div>
 </form>

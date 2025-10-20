@@ -13,5 +13,13 @@ namespace AutoServiceWeb.Models
         public decimal Price { get; set; }
         public int Discount { get; set; }
         public string Time { get; set; } = string.Empty;
+        public List<ServiceImage> AdditionalImages { get; set; } = new List<ServiceImage>();
+    }
+
+    public class ServiceImage
+    {
+        public int Id { get; set; }
+        public string ServiceId { get; set; } = string.Empty;
+        public string ImagePath { get; set; } = string.Empty;
     }
 }

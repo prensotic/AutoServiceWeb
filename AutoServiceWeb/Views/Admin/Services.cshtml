@@ -2,12 +2,22 @@
     Layout = "_DashboardLayout";
 }
 
-<div class="services_list">
+<h2 style="margin: 20px; color: #ffc936; font-size: 24px;">Список услуг</h2>
+
+<div style="margin-left:20px; margin-bottom:10px;">
+    <input type="text" id="serviceSearch" placeholder="Поиск услуги..." style="width: 400px; padding:5px;" />
+    <input type="number" id="minPrice" placeholder="Мин. цена" style="margin-right:10px; width:100px; padding:5px;" />
+    <input type="number" id="maxPrice" placeholder="Макс. цена" style="margin-right:10px; width:100px; padding:5px;" />
+    <input type="number" id="minDiscount" placeholder="Мин. скидка (%)" style="margin-right:10px; width:120px; padding:5px;" />
+    <input type="number" id="maxDiscount" placeholder="Макс. скидка (%)" style="width:120px; padding:5px;" />
+</div>
+
+<div class="services_list" id="servicesList">
     @foreach(var service in Model)
     {
         var finalPrice = service.Price - (service.Price * (service.Discount / 100m));
         <div class="service_item">
-            <img src="@service.MainImage"/>
+            <img src="@service.MainImage" alt="@service.Title"/>
             
             <h3>@service.Title</h3>
             <div class="service_item_info">
@@ -31,3 +41,38 @@
         </button>
     </a>
 </div>
+
+<script>
+const searchInput = document.getElementById('serviceSearch');
+const minPriceInput = document.getElementById('minPrice');
+const maxPriceInput = document.getElementById('maxPrice');
+const minDiscountInput = document.getElementById('minDiscount');
+const maxDiscountInput = document.getElementById('maxDiscount');
+const servicesList = document.getElementById('servicesList');
+
+async function updateServicesList() {
+    const query = searchInput.value;
+    const minPrice = minPriceInput.value;
+    const maxPrice = maxPriceInput.value;
+    const minDiscount = minDiscountInput.value;
+    const maxDiscount = maxDiscountInput.value;
+
+    const url = `/Admin/Services?search=${encodeURIComponent(query)}&minPrice=${minPrice}&maxPrice=${maxPrice}&minDiscount=${minDiscount}&maxDiscount=${maxDiscount}`;
+
+    const response = await fetch(url);
+    const html = await response.text();
+
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    const newList = tempDiv.querySelector('#servicesList');
+    servicesList.innerHTML = newList.innerHTML;
+}
+
+
+// Обработчики событий
+searchInput.addEventListener('input', updateServicesList);
+minPriceInput.addEventListener('input', updateServicesList);
+maxPriceInput.addEventListener('input', updateServicesList);
+minDiscountInput.addEventListener('input', updateServicesList);
+maxDiscountInput.addEventListener('input', updateServicesList);
+</script>
